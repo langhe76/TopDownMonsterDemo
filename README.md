@@ -1,2 +1,44 @@
-1. gitnore，是什么东西
-2. 
+
+
+# TopDownMonsterDemo
+
+俯视角动作小怪Demo，用于Unity客户端能力练习
+> 当前阶段：11.23–11.29 搭建FSM、对象池框架
+
+## 运行方式
+1. Unity版本：xxx
+2. 打开Assets/Scenes/Main.unity
+3. 进入Play模式
+
+## 本周开发模块
+- 通用有限状态机FSM
+- 通用对象池，附带Profiler性能对比
+
+
+
+TopDownMonsterDemo/
+├─ Assets/
+│  ├─ Scripts/
+│  │  ├─ Framework/        # 通用框架代码：FSM、对象池、事件总线等（代码凭证）
+│  │  └─ Demo/              # 业务代码：玩家、怪物逻辑
+│  ├─ Prefabs/
+│  ├─ Scenes/
+│  └─ Docs/                 # ✅ 【所有非代码凭证统一放这里】
+│     ├─ Notes/             # 结构化学习笔记（md）
+│     │  ├─ FSM/
+│     │  │  ├─ FSM设计与踩坑.md
+│     │  │  └─ FSM架构图.png
+│     │  └─ ObjectPool/
+│     │        ├─ 对象池设计与踩坑.md
+│     │        └─ 对象池时序图.png
+│     ├─ ProfilerData/      # ✅ 性能量化凭证（对象池对比截图、录制文件）
+│     │  ├─ Instantiate对比池复用_对比截图.png
+│     │  └─ profiler_raw.data
+│     └─ Plan/              # 计划、周快照、复盘文档
+│        ├─ 11.23-11.29周计划.md
+│        ├─ 每日打卡记录.md
+│        └─ 周复盘校验.md
+├─ .gitignore
+├─ README.md
+└─ 【仓库外】LocalBackup/    # 可选！本地额外备份（不提交git）
+   └─ Snapshot/             # 压缩包、大文件，不进版本库
