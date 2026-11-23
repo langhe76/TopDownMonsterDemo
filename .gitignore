@@ -1,0 +1,14 @@
+# Unity
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Ll]ogs/
+MemoryCaptures/
+Packages/com.unity.collab-proxy/
+UserSettings/
+*.csproj
+*.sln
+# 忽略docs下压缩包、临时文件
+*.zip
+*.tmp
+*.mp4
