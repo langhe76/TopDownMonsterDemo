@@ -12,7 +12,7 @@ using UnityEngine;
 /// <typeparam name="Tstate"></typeparam>
 public abstract class FsmStateBase<Tstate> : MonoBehaviour where Tstate : Enum
 {
-    
+    // 状态所属的状态类型
     public Tstate StateType{get;protected set;}
     // 所属状态机
     protected FsmStateMachine<Tstate> ownnerMachine;
