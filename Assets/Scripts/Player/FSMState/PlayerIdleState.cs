@@ -19,6 +19,8 @@ public class PlayerIdleState : FsmStateBase<PlayerState>
     public override void Enter()
     {
         _player.StopMove();
+        // 测试代码，控制台日志输出
+        Debug.Log("待机");
     }
 
     public override void Update()

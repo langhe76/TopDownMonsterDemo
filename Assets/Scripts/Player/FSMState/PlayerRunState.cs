@@ -12,7 +12,11 @@ public class PlayerRunState : FsmStateBase<PlayerState>
         _player = player;
     }
 
-    public override void Enter() { }
+    public override void Enter()
+    {
+        // 测试代码，玩家移动
+        Debug.Log("玩家移动");
+    }
 
     public override void Update()
     {

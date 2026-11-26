@@ -1,4 +1,5 @@
 using UnityEngine;
+
 [RequireComponent(typeof(Rigidbody2D))]
 public class PlayerController : MonoBehaviour
 {
@@ -35,8 +36,8 @@ public class PlayerController : MonoBehaviour
 
         Fsm.RegisterState(new PlayerIdleState(this));
         Fsm.RegisterState(new PlayerRunState(this));
-        // Fsm.RegisterState(new PlayerAttackState(this));
-        // Fsm.RegisterState(new PlayerHitState(this));
+        Fsm.RegisterState(new PlayerAttackState(this));
+        Fsm.RegisterState(new PlayerHitState(this));
     }
 
     void Start()
@@ -76,7 +77,7 @@ public class PlayerController : MonoBehaviour
 
     public void TakeDamage()
     {
-        Fsm.ChangeState(PlayerState.Attack);
+        Fsm.ChangeState(PlayerState.Hit);
     }
 
     public void Move()

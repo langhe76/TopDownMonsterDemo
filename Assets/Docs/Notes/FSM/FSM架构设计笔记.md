@@ -8,7 +8,7 @@
 public abstract class FsmStateBase<TState> where TState : System.Enum
 {
     public TState StateType { get; protected set; }
-    protected FsmStateMachine<TState> OwnerMachine;
+    protected FsmStateMachine<TState> ownerMachine;
 
     /// <summary>
     /// 初始化状态，绑定所属状态机
